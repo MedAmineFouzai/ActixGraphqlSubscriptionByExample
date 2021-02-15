@@ -2,14 +2,6 @@ use async_graphql::{ Object,ID};
 use serde::{Deserialize,Serialize};
 
 
-// #[derive(Debug,Clone,Deserialize,Serialize)]
-// pub struct FileObject {
-//     pub src:String,
-// }
-// #[derive(Debug,Clone,Deserialize,Serialize)]
-// pub struct MessageObject{
-//     pub msg:String,
-// }
 
 #[derive(Debug,Clone,Deserialize,Serialize)]
 pub struct UserObject {
@@ -38,37 +30,6 @@ impl UserObject {
     }
 
 }
-
-// #[Object]
-// impl MessageObject {
-//     async fn id(&self) -> &str {
-//         &self.id
-//     }
-//     async fn msg(&self) -> &str {
-//         &self.msg
-//     }
-
-//     async fn file(&self) -> &FileObject {
-//         &self.file
-//     }
-
-// }
-
-// #[Object]
-// impl FileObject {
-//     async fn id(&self) -> &str {
-//         &self.id
-//     }
-//     async fn filename(&self) ->&str {
-//         &self.filename
-//     }
-
-//     async fn src(&self) -> &str {
-//         &self.src
-//     }
-
-// }
-
 
 
 
